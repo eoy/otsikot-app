@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <property name="acs-oauth-secret-production" type="string">aK35AcpCqF9kKH9oIt9wujg3bsj3ZWO8</property>
+    <property name="acs-oauth-key-production" type="string">EwMFSuV1rndWNApatXZyjQFV9H8gd5gl</property>
+    <property name="acs-api-key-production" type="string">t4CNVp7xHwJYtkmBhIFdAyvx4fbRPLXT</property>
+    <property name="acs-oauth-secret-development" type="string">Pi940DhA12p1DpNxIBQcAmD6hWFj61mP</property>
+    <property name="acs-oauth-key-development" type="string">ag8ss9zG83z5zW8IOX1hTbOxJgbCyWZW</property>
+    <property name="acs-api-key-development" type="string">Ed3V3t2kNRS2mA110e8Vl4Z9ORlVTYji</property>
+    <deployment-targets>
+        <target device="mobileweb">false</target>
+        <target device="iphone">true</target>
+        <target device="ipad">true</target>
+        <target device="android">true</target>
+        <target device="blackberry">false</target>
+    </deployment-targets>
+    <sdk-version>2.1.0.GA</sdk-version>
+    <id>fi.otsikot.otsikotApp</id>
+    <name>Otsikot</name>
+    <version>1.0</version>
+    <publisher>eoy</publisher>
+    <url>http://otsikot.fi</url>
+    <description>not specified</description>
+    <copyright>2012 by eoy</copyright>
+    <icon>appicon.png</icon>
+    <persistent-wifi>false</persistent-wifi>
+    <prerendered-icon>false</prerendered-icon>
+    <statusbar-style>default</statusbar-style>
+    <statusbar-hidden>false</statusbar-hidden>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>false</navbar-hidden>
+    <analytics>true</analytics>
+    <guid>7f896aa3-86cb-4ac9-a02f-41f9b0b602bf</guid>
+    <property name="ti.ui.defaultunit">system</property>
+    <iphone>
+        <orientations device="iphone">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+        </orientations>
+        <orientations device="ipad">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+            <orientation>Ti.UI.UPSIDE_PORTRAIT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_LEFT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
+        </orientations>
+    </iphone>
+    <android xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <modules>
+        <module platform="commonjs" version="2.1.0">ti.cloud</module>
+    </modules>
+</ti:app>
